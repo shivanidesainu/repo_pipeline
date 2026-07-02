@@ -19,9 +19,9 @@ jobs:
 
       - name: Build Docker Image
         run: |
-          docker build -t ${{ secrets.DOCKER_USERNAME }}/github-actions-demo:latest .
+          docker build -t ${{ secrets.DOCKER_USERNAME }}/github-actions-demo:v1 .
 
       - name: Push Docker Image
         run: |
-          docker push ${{ secrets.DOCKER_USERNAME }}/github-actions-demo:latest
+          docker push ${{ secrets.DOCKER_USERNAME }}/github-actions-demo:v1
 
